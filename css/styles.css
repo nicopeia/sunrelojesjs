@@ -1,0 +1,299 @@
+html{
+    scroll-behavior: smooth;
+}
+/* menu de navegacion
+==============================*/
+nav{
+    height: 100px;
+   
+}
+nav p {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size:26px;
+   letter-spacing: 1px;
+   font-family: 'Open Sans', sans-serif;
+	line-height: 24px;
+}
+nav p:hover {
+color: rgb(2, 2, 2);
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+    
+}
+
+.nav-link:hover{
+
+
+color: rgb(253, 245, 245);
+
+}
+nav.navegador{
+    background:rgba(255, 150, 14, 0.938);
+    height: 75px;
+    transition: all 0.1s ease-in;
+    
+}
+
+nav a span{
+    font-size: 14px;
+     position: absolute; 
+     top: 10px; 
+     right: 4px;
+     width: 17px;
+     border-radius: 24px;
+     color: rgb(0, 0, 0);
+    background:rgb(255, 253, 253);
+    text-align: center;
+}
+
+
+header {
+	background: url(../img/portada22.jpg) center center no-repeat fixed;
+	background-size: cover;
+	color: #cfcfcf;
+	position: relative;
+    height: 680px;
+   
+}
+.intro-text {
+	position: relative;
+	padding-top: 200px;
+   
+	
+}
+.intro-text h1 {
+	font-size: 67px;
+	color: #eeeeee;
+    font-weight: 600;
+   color: rgb(245, 235, 235);
+   -webkit-box-reflect: below 1px linear-gradient(transparent,#0005)  ;
+}
+.color {
+    color: rgb(198, 240, 10);
+    font-weight: 700;
+   
+   
+}
+#sol{
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+    box-shadow: 20px;
+    
+}
+.sol{
+    position: relative;
+    animation: sol 2s infinite;
+   transition: all 2s ease-in;
+
+}
+
+@keyframes sol{
+    from {
+    transform: rotate(360deg);
+    
+}
+     
+    
+}
+
+
+.intro-text a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px;
+    color: #feffff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5;
+    letter-spacing: 3px;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005)  ;
+    text-decoration: none;
+}
+.intro-text a:nth-child(1){
+filter: hue-rotate(290deg);
+}
+.intro-text a:nth-child(3){
+    filter: hue-rotate(110deg);
+}
+
+.intro-text {
+    background: linear-gradient(transparent,rgb(248, 194, 94));
+    color: white;
+    height: 690px;
+}
+.intro-text a{
+    background: linear-gradient(transparent,rgb(255, 73, 73));
+    color: white;
+    box-shadow: 0px 0px 5px  rgb(255, 104, 104),
+    0px 0px 25px  rgb(255, 104, 104),
+    0px 0px 50px  rgb(255, 104, 104),
+    0px 0px 70px  rgb(255, 104, 104);
+    text-decoration: none;
+  
+}
+.intro-text a:hover{
+ color:white;
+ text-decoration: none;
+  
+}
+
+.intro-text a span{
+    position: absolute;
+    display: block;
+}
+   
+.intro-text a span:nth-child(1){
+top:0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg,transparent,rgb(255, 0, 0));
+animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.intro-text a span:nth-child(2){
+    top:-100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(255, 0, 0));
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+    }
+    
+    @keyframes animate2{
+        0%{
+            top: -100%;
+        }
+        50%,100%{
+            top: 100%;
+        }
+    }
+    .intro-text a span:nth-child(3){
+        bottom:0;
+        right: -100;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg,transparent,rgb(255, 0, 0));
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+        }
+        
+        @keyframes animate3{
+            0%{
+                right: -100%;
+            }
+            50%,100%{
+                right: 100%;
+            }
+        }
+        .intro-text a span:nth-child(4){
+            bottom:-100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg,transparent,rgb(255, 0, 0));
+            animation: animate4 1s linear infinite;
+            animation-delay: 0.75s;
+            }
+            
+            @keyframes animate4{
+                0%{
+                    bottom: -100%;
+                }
+                50%,100%{
+                    bottom: 100%;
+                }
+            }
+
+
+
+
+button {
+    cursor: pointer;
+}
+
+
+.up {
+    position:fixed;
+    width:45px;
+    height:45px;
+    bottom:20px;
+    right:40px;
+    background-color:#fbff00;
+    opacity: 2;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:1000;
+    text-decoration: none;
+  }
+  .up:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .fa-arrow-up {
+    margin-top:8px;
+  }
+
+.card-body{
+    background: linear-gradient(transparent,rgb(246, 250, 247));
+    box-shadow: 0px 0px 5px  rgb(238, 215, 4);
+   
+}
+
+
+#bannerFoto  {
+	background: rgb(20, 20, 20) url(../img/portada.jpg) center center no-repeat fixed;
+	background-size: cover;
+	height: 400px;
+}
+
+.fb{
+    width: 63px;
+    height: 63px;
+    position: relative;
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
